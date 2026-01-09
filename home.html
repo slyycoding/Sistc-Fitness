@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SISTC Fitness Center</title>
+  <meta name="description" content="SISTC Fitness Center — strength, conditioning, and coaching." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container nav-wrap">
+      <div class="brand" aria-label="SISTC Fitness Center">
+        <span class="brand-mark" aria-hidden="true">SC</span>
+        <span class="brand-text">SISTC</span>
+      </div>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        ☰
+      </button>
+
+      <nav id="site-nav" class="nav" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#calculator">Calculator</a>
+        <a href="#enquiry">Enquiry</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero" aria-label="Hero banner">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">SISTC Fitness • Strength • Conditioning</p>
+          <h1>SISTC Fitness Center</h1>
+          <p class="lead">
+            SISTC Fitness Center is a modern gym built for people who want structure, coaching, and real progress —
+            from beginners to athletes.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#enquiry">Join / Enquire</a>
+            <a class="btn btn-ghost" href="#services">View Services</a>
+          </div>
+
+          <ul class="hero-badges" aria-label="Key benefits">
+            <li>✅ Beginner friendly</li>
+            <li>✅ Coaching plans</li>
+            <li>✅ 24/7 access options</li>
+          </ul>
+        </div>
+
+        <div class="hero-card" role="note" aria-label="Gym highlights">
+          <div class="hero-card-inner">
+            <h2 class="card-title">This Week’s Focus</h2>
+            <p class="card-sub">Strength + stamina builder</p>
+
+            <div class="stats" aria-label="Highlights">
+              <div class="stat">
+                <div class="stat-num">45</div>
+                <div class="stat-label">min sessions</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num">3</div>
+                <div class="stat-label">intensity levels</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num">1</div>
+                <div class="stat-label">goal: consistency</div>
+              </div>
+            </div>
+
+            <p class="micro">
+              Tip: Use the calorie calculator below to estimate burn by intensity and time.
+            </p>
+            <a class="btn btn-primary btn-full" href="#calculator">Try Calculator</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-glow" aria-hidden="true"></div>
+    </section>
+
+    <section class="section">
+      <div class="container two-col">
+        <div>
+          <h2>About SISTC Fitness</h2>
+          <p>
+            We combine strength training, conditioning, and coaching so you always know what to do next.
+            Our programs are built around progressive overload, safe technique, and sustainable habits.
+          </p>
+        </div>
+        <div class="panel">
+          <h3 class="panel-title">Open Hours</h3>
+          <ul class="list">
+            <li><span>Mon–Fri</span><span>5:00am – 10:00pm</span></li>
+            <li><span>Sat</span><span>7:00am – 8:00pm</span></li>
+            <li><span>Sun</span><span>7:00am – 6:00pm</span></li>
+          </ul>
+          <p class="micro">
+            Hours shown are sample content for your assignment demo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section section-dark" aria-label="Featured services">
+      <div class="container">
+        <div class="section-head">
+          <h2>Featured Services</h2>
+          <p class="muted">Pick a path. We’ll help you stay consistent and level up.</p>
+        </div>
+
+        <div class="cards" role="list">
+          <article class="card" role="listitem">
+            <h3>Strength Training</h3>
+            <p>Structured barbell & dumbbell programs for building muscle and power.</p>
+            <ul class="ticks">
+              <li>Form coaching</li>
+              <li>Progressive plans</li>
+              <li>Beginner options</li>
+            </ul>
+          </article>
+
+          <article class="card" role="listitem">
+            <h3>Group Classes</h3>
+            <p>High-energy sessions combining conditioning, mobility, and core.</p>
+            <ul class="ticks">
+              <li>HIIT + circuits</li>
+              <li>All fitness levels</li>
+              <li>Community vibe</li>
+            </ul>
+          </article>
+
+          <article class="card" role="listitem">
+            <h3>Personal Training</h3>
+            <p>1:1 coaching tailored to your goals: fat loss, strength, performance.</p>
+            <ul class="ticks">
+              <li>Custom plan</li>
+              <li>Technique focus</li>
+              <li>Accountability</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="calculator" class="section" aria-label="Calorie burn calculator">
+      <div class="container two-col">
+        <div>
+          <h2>Calorie Burn Calculator</h2>
+          <p class="muted">
+            Estimate calories burned using workout intensity and duration. Educational estimate for assignment demo.
+          </p>
+
+          <form class="calc" id="calc-form" novalidate>
+            <label>
+              Weight (kg)
+              <input id="weight" name="weight" type="number" inputmode="decimal" min="20" max="250" step="0.1" placeholder="e.g., 70" required />
+            </label>
+
+            <label>
+              Duration (minutes)
+              <input id="duration" name="duration" type="number" inputmode="numeric" min="5" max="300" step="1" placeholder="e.g., 45" required />
+            </label>
+
+            <label>
+              Intensity
+              <select id="intensity" name="intensity" required>
+                <option value="light">Light (MET 4)</option>
+                <option value="moderate" selected>Moderate (MET 7)</option>
+                <option value="intense">Intense (MET 10)</option>
+              </select>
+            </label>
+
+            <div class="calc-actions">
+              <button class="btn btn-primary" type="submit">Calculate</button>
+              <button class="btn btn-ghost" type="button" id="calc-reset">Reset</button>
+            </div>
+
+            <div class="result" role="status" aria-live="polite">
+              <div class="result-title">Estimated Burn</div>
+              <div class="result-num" id="calories-out">—</div>
+              <div class="micro" id="calc-note"></div>
+            </div>
+          </form>
+        </div>
+
+        <div class="panel">
+          <h3 class="panel-title">How it works</h3>
+          <p class="micro">calories = MET × weight(kg) × duration(hours)</p>
+          <p class="micro">
+            MET is an intensity value. The result is an estimate and can vary by fitness level and workout type.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="enquiry" class="section section-dark" aria-label="Membership enquiry form">
+      <div class="container">
+        <div class="section-head">
+          <h2>Membership Enquiry</h2>
+          <p class="muted">Send an enquiry and we’ll reply with membership options.</p>
+        </div>
+
+        <form id="enquiry-form" class="form" novalidate>
+          <div class="grid">
+            <label>
+              Full Name
+              <input id="name" name="name" type="text" placeholder="Your name" maxlength="60" required />
+            </label>
+
+            <label>
+              Email
+              <input id="email" name="email" type="email" placeholder="you@example.com" maxlength="80" required />
+            </label>
+
+            <label class="full">
+              Goal
+              <select id="goal" name="goal" required>
+                <option value="" selected disabled>Select a goal</option>
+                <option value="Fat loss">Fat loss</option>
+                <option value="Build muscle">Build muscle</option>
+                <option value="Strength">Strength</option>
+                <option value="General fitness">General fitness</option>
+              </select>
+            </label>
+
+            <label class="full">
+              Message
+              <textarea id="message" name="message" rows="5" placeholder="Tell us what you’re aiming for..." maxlength="700" required></textarea>
+            </label>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Send Email</button>
+            <p class="micro privacy">
+              Privacy: We only use your details to respond to this enquiry. Don’t submit sensitive info.
+            </p>
+          </div>
+
+          <p class="micro" id="enquiry-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand footer-brand">
+          <span class="brand-mark" aria-hidden="true">SC</span>
+          <span class="brand-text">
+            SISTC
+        </span>
+        </div>
+        <p class="micro">SISTC Fitness Center — ICT101 Assignment Demo Website.</p>
+      </div>
+
+      <div class="footer-links" aria-label="Footer links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#calculator">Calculator</a>
+        <a href="#enquiry">Enquiry</a>
+      </div>
+
+      <div class="micro">
+        <div><strong>Contact:</strong> <span>
+info@sistc.edu.au</span></div>
+        <div><strong>Privacy:</strong> <span>Data used only to reply.</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
